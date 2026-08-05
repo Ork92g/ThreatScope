@@ -1,6 +1,6 @@
 # 🛡️ ThreatScope
 
-![ThreatScope Banner](./screenshots/threatscope-banner.png)
+![ThreatScope](./screenshots/12121212.png)
 
 Cyber Threat Intelligence Platform built for SOC Analyst investigation workflows.
 
@@ -12,10 +12,10 @@ ThreatScope is a Blue Team security platform for investigating IOCs, Threat Acto
 
 ## 🔎 IOC Investigation
 
-- Search suspicious indicators
-- Analyze IP addresses
-- Identify associated threat actors
-- Review malicious infrastructure
+- Search Indicators of Compromise (IOCs)
+- Investigate suspicious IP addresses
+- Identify related threat actors
+- Analyze threat intelligence data
 
 ---
 
@@ -23,7 +23,7 @@ ThreatScope is a Blue Team security platform for investigating IOCs, Threat Acto
 
 - Threat actor profiles
 - Aliases
-- Risk levels
+- Risk classification
 - Malware families
 - Known IOCs
 - Campaign timeline
@@ -41,22 +41,14 @@ ThreatScope is a Blue Team security platform for investigating IOCs, Threat Acto
 ## 📋 Log Analysis
 
 - Windows Event investigation
-- Failed authentication analysis
+- Failed login analysis
 - SOC incident investigation workflow
 
 ---
 
 # 📸 Screenshots
 
-## Threat Intelligence Center
-
-![Threat Intelligence Center](./screenshots/threat-intelligence-center.png)
-
----
-
-## Threat Actor Search
-
-![Threat Actor Search](./screenshots/threat-search.png)
+![ThreatScope Screenshot](./screenshots/12121212.png)
 
 ---
 
@@ -72,7 +64,7 @@ ThreatScope is a Blue Team security platform for investigating IOCs, Threat Acto
 
 # 🎯 Project Purpose
 
-ThreatScope was developed as a SOC Analyst portfolio project demonstrating:
+ThreatScope was created as a SOC Analyst portfolio project demonstrating:
 
 - IOC investigation
 - Threat intelligence analysis
