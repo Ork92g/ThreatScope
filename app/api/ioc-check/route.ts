@@ -1,68 +1,61 @@
 import { NextResponse } from "next/server";
-import { iocDatabase } from "../../data/ioc-database";
+
+export async function POST(req: Request) {
+
+  const body = await req.json();
+
+  const indicator = body.indicator;
 
 
-export async function POST(request: Request) {
+  const database: Record<string, any> = {
 
+    "185.89.45.22": {
+      type: "IPv4",
+      reputation: 92,
+      risk: "HIGH",
+      country: "Russia",
+      threatActor: "APT29",
+      malware: "SUNBURST"
+    },
 
-  try {
+    "malicious-domain.com": {
+      type: "Domain",
+      reputation: 87,
+      risk: "HIGH",
+      country: "North Korea",
+      threatActor: "Lazarus Group",
+      malware: "AppleJeus"
+    },
 
-    const body = await request.json();
-
-
-    const value = String(body.value);
-
-
-    const result =
-      iocDatabase[value as keyof typeof iocDatabase];
-
-
-    if(result){
-
-      return NextResponse.json({
-
-        found:true,
-        value,
-        result
-
-      });
-
+    "8.8.8.8": {
+      type: "IPv4",
+      reputation: 5,
+      risk: "LOW",
+      country: "United States",
+      threatActor: "None",
+      malware: "None"
     }
 
+  };
 
 
-    return NextResponse.json({
+  const result = database[indicator] || {
 
-      found:false,
-      value,
+    type: "Unknown",
+    reputation: 0,
+    risk: "UNKNOWN",
+    country: "Unknown",
+    threatActor: "Unknown",
+    malware: "Unknown"
 
-      result:{
-        type:"Unknown",
-        risk:"Unknown",
-        reputation:"No Data",
-        actor:"Unknown",
-        source:"Local Database"
-      }
-
-    });
+  };
 
 
+  return NextResponse.json({
 
-  } catch {
+    indicator,
+    ...result
 
-
-    return NextResponse.json(
-
-      {
-        error:"Invalid request"
-      },
-
-      {
-        status:400
-      }
-
-    );
-
-  }
+  });
 
 }
