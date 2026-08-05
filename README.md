@@ -52,6 +52,7 @@ ThreatScope is a Blue Team security platform for investigating IOCs, Threat Acto
 
 ![Log Analyzer](screenshots/log-analyzer.png)
 
+![MITRE Mapping](screenshots/mitre-mapping.png)
 ---
 
 # 🛠️ Technologies
