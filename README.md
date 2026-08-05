@@ -2,6 +2,8 @@
 
 ## Cyber Threat Intelligence & SOC Investigation Platform
 
+![ThreatScope Preview](./public/threatscope-banner.png)
+
 ThreatScope is a cybersecurity investigation toolkit designed for SOC analysts, threat hunters and security researchers.
 
 The platform helps analyze Indicators of Compromise (IOCs), investigate threats, map attacker behavior to MITRE ATT&CK techniques and accelerate security investigations.
@@ -34,7 +36,6 @@ The platform helps analyze Indicators of Compromise (IOCs), investigate threats,
 
 ## 🖥️ Preview
 
-![ThreatScope Preview](./public/threatscope-banner.png)
 
 ---
 
