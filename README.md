@@ -1,6 +1,6 @@
 # 🛡️ ThreatScope
 
-![ThreatScope](https://raw.githubusercontent.com/Ork92g/ThreatScope/main/screenshots/12121212.png)
+![ThreatScope](screenshots/12121212.png)
 
 Cyber Threat Intelligence Platform built for SOC Analyst investigation workflows.
 
