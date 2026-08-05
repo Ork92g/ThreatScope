@@ -1,81 +1,79 @@
 # 🛡️ ThreatScope
-![Next.js](https://img.shields.io/badge/Next.js-16-black)
-![TypeScript](https://img.shields.io/badge/TypeScript-blue)
-![Cyber Security](https://img.shields.io/badge/Domain-Cybersecurity-red)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-orange)
 
-## Cyber Threat Intelligence & SOC Investigation Platform
+![ThreatScope](screenshots/12121212.png)
 
-![ThreatScope Preview](./public/threatscope-banner.png)
+Cyber Threat Intelligence Platform built for SOC Analyst investigation workflows.
 
-ThreatScope is a cybersecurity investigation toolkit designed for SOC analysts, threat hunters and security researchers.
-
-The platform helps analyze Indicators of Compromise (IOCs), investigate threats, map attacker behavior to MITRE ATT&CK techniques and accelerate security investigations.
+ThreatScope is a Blue Team security platform for investigating IOCs, Threat Actors, MITRE ATT&CK techniques and security events.
 
 ---
 
-## 🚀 Features
+# 🚀 Features
 
-### 🔎 IOC Investigation
-- IP reputation analysis
-- Threat intelligence lookups
-- Malicious indicator detection
+## 🔎 IOC Investigation
 
-### 🧬 Threat Intelligence
-- Threat actor investigation
-- Malware campaign research
-- Attack pattern analysis
+- Search Indicators of Compromise (IOCs)
+- Investigate suspicious IP addresses
+- Identify related threat actors
+- Analyze threat intelligence data
 
-### 🎯 MITRE ATT&CK Mapping
+---
+
+## 🎯 Threat Actor Intelligence
+
+- Threat actor profiles
+- Aliases
+- Risk classification
+- Malware families
+- Known IOCs
+- Campaign timeline
+
+---
+
+## 🧩 MITRE ATT&CK Mapping
+
 - Technique identification
-- Tactic classification
-- Threat behavior visualization
-
-### 📊 SOC Toolkit
-- Security dashboards
-- Investigation utilities
-- Analyst workflow tools
+- Adversary behavior analysis
+- Attack pattern investigation
 
 ---
 
-## 🖥️ Preview
+## 📋 Log Analysis
 
+- Windows Event investigation
+- Failed login analysis
+- SOC incident investigation workflow
 
 ---
 
-## 🛠️ Tech Stack
+# 📸 Screenshots
+
+![ThreatScope Screenshot](./screenshots/12121212.png)
+
+---
+
+# 🛠️ Technologies
 
 - Next.js
-- TypeScript
 - React
+- TypeScript
 - Tailwind CSS
-- REST APIs
-- Cyber Threat Intelligence APIs
+- MITRE ATT&CK Framework
 
 ---
 
-## 📌 Roadmap
+# 🎯 Project Purpose
 
-- [x] IP Reputation Checker
-- [x] Threat Intelligence Dashboard
-- [ ] Malware Analysis Module
-- [ ] SIEM Log Analyzer
-- [ ] Automated Threat Reports
-- [ ] Threat Hunting Queries
+ThreatScope was created as a SOC Analyst portfolio project demonstrating:
 
----
-
-## 🎯 Purpose
-
-Built as a SOC Analyst portfolio project to demonstrate:
-
-- Blue Team capabilities
-- Threat Investigation skills
-- Security automation
-- Cyber intelligence workflows
+- IOC investigation
+- Threat intelligence analysis
+- Blue Team workflows
+- Security dashboard development
+- Incident investigation concepts
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-Cybersecurity Portfolio Project
+SOC Analyst | Cyber Security Portfolio Project
