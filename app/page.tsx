@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import ThreatSearch from "./components/ThreatSearch";
 import ThreatCard from "./components/ThreatCard";
+import ThreatTimeline from "./components/ThreatTimeline";
 import { threatActors } from "./data/threat-actors";
 
 
@@ -80,7 +81,6 @@ export default function Home() {
           gap-6
           mb-10
         ">
-
 
 
           <DashboardCard
@@ -169,6 +169,9 @@ export default function Home() {
 
 
         <ThreatSearch />
+
+
+        <ThreatTimeline />
 
 
 

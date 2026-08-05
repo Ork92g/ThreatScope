@@ -1,61 +1,89 @@
-type TimelineProps = {
-  events: string[];
-};
+"use client";
+
+const events = [
+  {
+    year: "2024",
+    title: "MITRE ATT&CK techniques updated",
+    severity: "MEDIUM"
+  },
+  {
+    year: "2025",
+    title: "SUNBURST malware campaign analyzed",
+    severity: "HIGH"
+  },
+  {
+    year: "2026",
+    title: "New IOC discovered",
+    severity: "CRITICAL"
+  }
+];
 
 
-export default function ThreatTimeline({
-  events
-}: TimelineProps) {
+export default function ThreatTimeline() {
 
 
   return (
 
-    <div className="mt-6">
+    <div className="
+      bg-slate-900
+      border
+      border-slate-800
+      rounded-xl
+      p-6
+      mt-10
+    ">
 
 
-      <h4 className="
-      text-purple-400
-      font-bold
-      mb-3
+      <h2 className="
+        text-2xl
+        font-bold
+        text-cyan-400
+        mb-6
       ">
-
         Threat Activity Timeline
-
-      </h4>
-
+      </h2>
 
 
-      <div className="
-      border-l
-      border-purple-700
-      pl-4
-      space-y-3
-      ">
+
+      <div className="space-y-4">
 
 
         {events.map((event, index)=>(
 
 
           <div
-          key={index}
-          className="
-          text-zinc-400
-          "
+            key={index}
+            className="
+              bg-slate-800
+              rounded-lg
+              p-4
+            "
           >
 
 
-            <span className="
-            text-purple-400
-            mr-2
-            "
-            >
-
-              ●
-
-            </span>
+            <div className="flex justify-between">
 
 
-            {event}
+              <span className="font-bold text-xl">
+                {event.year}
+              </span>
+
+
+              <span className="
+                text-red-400
+                font-bold
+              ">
+                {event.severity}
+              </span>
+
+
+            </div>
+
+
+
+            <p className="mt-2 text-slate-300">
+              {event.title}
+            </p>
 
 
           </div>
@@ -70,6 +98,5 @@ export default function ThreatTimeline({
     </div>
 
   );
-
 
 }
