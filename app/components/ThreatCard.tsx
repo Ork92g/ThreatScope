@@ -1,165 +1,146 @@
-import ReportButton from "./ReportButton";
-import MItreBadge from "./MitreBadge";
 import ThreatTimeline from "./ThreatTimeline";
 
 
-type ThreatCardProps = {
+interface ThreatCardProps {
+
   name: string;
-  malware: string[];
-  techniques: string[];
-  iocs: string[];
-  timeline: string[];
-};
+
+  aliases: readonly string[];
+
+  origin: string;
+
+  risk: string;
+
+  description: string;
+
+  techniques: readonly string[];
+
+  malware: readonly string[];
+
+  iocs: readonly string[];
+
+  timeline: readonly string[];
+
+}
 
 
 
 export default function ThreatCard({
-
   name,
-  malware,
+  aliases,
+  origin,
+  risk,
+  description,
   techniques,
+  malware,
   iocs,
-  timeline
-
+  timeline,
 }: ThreatCardProps) {
-
-
-
-  const actor = {
-
-    name,
-    malware,
-    techniques,
-    iocs
-
-  };
-
-
 
 
   return (
 
     <div className="
-    bg-zinc-950
-    border
-    border-zinc-800
-    rounded-xl
-    p-6
-    hover:border-purple-500
-    transition
+      bg-slate-900
+      border
+      border-slate-800
+      rounded-xl
+      p-6
     ">
 
 
-
-      <div className="
-      flex
-      justify-between
-      items-center
-      ">
-
-
-
-        <h3 className="
+      <h3 className="
         text-2xl
         font-bold
-        text-purple-400
-        ">
-
-          {name}
-
-        </h3>
-
-
-
-
-        <span className="
-        bg-red-950
-        text-red-400
-        px-3
-        py-1
-        rounded-full
-        text-sm
-        ">
-
-          HIGH
-
-        </span>
-
-
-
-      </div>
-
-
-
-
-
-
-      <div className="
-      mt-5
-      space-y-3
-      text-zinc-300
+        text-cyan-400
       ">
+        {name}
+      </h3>
 
+
+      <p className="text-slate-400 mt-2">
+        {description}
+      </p>
+
+
+      <div className="mt-4 space-y-2">
+
+        <p>
+          <span className="text-slate-400">
+            Origin:
+          </span>{" "}
+          {origin}
+        </p>
 
 
         <p>
-          🦠 Malware
+          <span className="text-slate-400">
+            Risk:
+          </span>{" "}
+          <span className="text-red-400 font-bold">
+            {risk}
+          </span>
         </p>
-
-
-        <p className="text-zinc-500">
-
-          {malware.join(", ")}
-
-        </p>
-
-
-
-
 
 
         <p>
-          🌐 Indicators
+          <span className="text-slate-400">
+            Aliases:
+          </span>{" "}
+          {aliases.join(", ")}
         </p>
-
-
-        <p className="text-zinc-500">
-
-          {iocs.join(", ")}
-
-        </p>
-
-
-
-
-
-
-        <MItreBadge techniques={techniques} />
-
-
-
-
-
-
-        <ThreatTimeline events={timeline} />
-
-
-
-
-
-
-        <ReportButton actor={actor}/>
-
-
 
       </div>
 
 
+
+      <div className="mt-5">
+
+        <h4 className="font-bold text-white">
+          Malware
+        </h4>
+
+        <p className="text-slate-300">
+          {malware.join(", ")}
+        </p>
+
+      </div>
+
+
+
+      <div className="mt-5">
+
+        <h4 className="font-bold text-white">
+          MITRE Techniques
+        </h4>
+
+        <p className="text-slate-300">
+          {techniques.join(", ")}
+        </p>
+
+      </div>
+
+
+
+      <div className="mt-5">
+
+        <h4 className="font-bold text-white">
+          IOCs
+        </h4>
+
+        <p className="text-slate-300">
+          {iocs.join(", ")}
+        </p>
+
+      </div>
+
+
+
+      <ThreatTimeline events={timeline} />
 
 
     </div>
 
   );
-
 
 }
