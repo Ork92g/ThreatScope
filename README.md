@@ -1,59 +1,81 @@
 # 🛡️ ThreatScope
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+![Cyber Security](https://img.shields.io/badge/Domain-Cybersecurity-red)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-orange)
 
-ThreatScope is a Cyber Threat Intelligence platform designed to help security analysts investigate threat actors, malware campaigns, Indicators of Compromise (IOCs), and MITRE ATT&CK techniques.
+## Cyber Threat Intelligence & SOC Investigation Platform
 
-The project was created from practical SOC experience and a desire to improve investigation workflows by building a centralized intelligence workspace.
+![ThreatScope Preview](./public/threatscope-banner.png)
 
----
+ThreatScope is a cybersecurity investigation toolkit designed for SOC analysts, threat hunters and security researchers.
 
-# 🚀 Features
-
-## Threat Actor Intelligence
-
-- Threat actor profiles
-- Risk classification
-- Origin and aliases
-- Malware association
-- IOC tracking
-- MITRE ATT&CK technique mapping
-- Threat activity timeline
-
-
-## Investigation Workflow
-
-- Threat actor search
-- Intelligence overview cards
-- Structured security information
-- Investigation report generation
-
-
-## Reporting
-
-- Generate PDF intelligence reports
-- Export investigation findings
+The platform helps analyze Indicators of Compromise (IOCs), investigate threats, map attacker behavior to MITRE ATT&CK techniques and accelerate security investigations.
 
 ---
 
-# 🧰 Technologies
+## 🚀 Features
 
-- Next.js 16
-- React
+### 🔎 IOC Investigation
+- IP reputation analysis
+- Threat intelligence lookups
+- Malicious indicator detection
+
+### 🧬 Threat Intelligence
+- Threat actor investigation
+- Malware campaign research
+- Attack pattern analysis
+
+### 🎯 MITRE ATT&CK Mapping
+- Technique identification
+- Tactic classification
+- Threat behavior visualization
+
+### 📊 SOC Toolkit
+- Security dashboards
+- Investigation utilities
+- Analyst workflow tools
+
+---
+
+## 🖥️ Preview
+
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js
 - TypeScript
+- React
 - Tailwind CSS
-- jsPDF
+- REST APIs
+- Cyber Threat Intelligence APIs
 
 ---
 
-# 🔐 Cybersecurity Concepts
+## 📌 Roadmap
 
-Implemented concepts:
-
-- Threat Intelligence
-- IOC Analysis
-- MITRE ATT&CK Framework
-- Malware Intelligence
-- SOC Investigation Workflow
+- [x] IP Reputation Checker
+- [x] Threat Intelligence Dashboard
+- [ ] Malware Analysis Module
+- [ ] SIEM Log Analyzer
+- [ ] Automated Threat Reports
+- [ ] Threat Hunting Queries
 
 ---
 
-# 📂 Architecture
+## 🎯 Purpose
+
+Built as a SOC Analyst portfolio project to demonstrate:
+
+- Blue Team capabilities
+- Threat Investigation skills
+- Security automation
+- Cyber intelligence workflows
+
+---
+
+## 👨‍💻 Author
+
+Cybersecurity Portfolio Project
