@@ -1,6 +1,6 @@
 # 🛡️ ThreatScope
 
-![ThreatScope Banner](./screenshots/threatscope-banner.png)
+![ThreatScope Banner](screenshots/threatscope-banner.png)
 
 Cyber Threat Intelligence Platform built for SOC Analyst investigation workflows.
 
