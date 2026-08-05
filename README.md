@@ -2,20 +2,19 @@
 
 ![ThreatScope Banner](https://raw.githubusercontent.com/Ork92g/ThreatScope/main/public/threatscope-banner.png)
 
-Cyber Threat Intelligence Platform built for SOC Analyst investigation workflows.
+Cyber Threat Intelligence & SOC Investigation Platform
 
-ThreatScope is a Blue Team security platform for investigating IOCs, Threat Actors, MITRE ATT&CK techniques and security events.
-
+ThreatScope is a SOC analyst portfolio project focused on threat intelligence investigation, IOC analysis, MITRE ATT&CK mapping and security event analysis.
 ---
 
 # 🚀 Features
 
 ## 🔎 IOC Investigation
 
-- Search Indicators of Compromise (IOCs)
-- Investigate suspicious IP addresses
-- Identify related threat actors
-- Analyze threat intelligence data
+- Threat Actor Investigation
+- IOC Reputation Analysis
+- MITRE ATT&CK Technique Mapping
+- Windows Security Log Analysis
 
 ---
 
@@ -67,8 +66,16 @@ ThreatScope is a Blue Team security platform for investigating IOCs, Threat Acto
 - React
 - TypeScript
 - Tailwind CSS
-- MITRE ATT&CK Framework
+- GitHub
 
+---
+
+## Future Improvements
+
+- VirusTotal API integration
+- AbuseIPDB integration
+- SIEM integration
+- Automated IOC enrichment
 ---
 
 # 🎯 Project Purpose
