@@ -1,4 +1,8 @@
 # 🛡️ ThreatScope
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-blue)
+![Cyber Security](https://img.shields.io/badge/Domain-Cybersecurity-red)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-orange)
 
 ## Cyber Threat Intelligence & SOC Investigation Platform
 
