@@ -47,7 +47,8 @@ ThreatScope is a SOC analyst portfolio project focused on threat intelligence in
 
 # 📸 Screenshots
 
-![ThreatScope Screenshot](./screenshots/12121212.png)
+## Dashboard
+![ThreatScope Dashboard](screenshots/dashboard.png)
 
 ## Log analyzing
 ![Log Analyzer](screenshots/log-analyzer.png)
