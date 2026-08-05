@@ -76,6 +76,11 @@ ThreatScope is a SOC analyst portfolio project focused on threat intelligence in
 - AbuseIPDB integration
 - SIEM integration
 - Automated IOC enrichment
+- Threat Actor Intelligence
+- IOC Investigation
+- MITRE ATT&CK Mapping
+- Windows Log Analysis
+- Cyber Threat Research Dashboard
 ---
 
 # 🎯 Project Purpose
